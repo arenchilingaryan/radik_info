@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.welcome {
+  padding-top: 30px;
+  text-align: center;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.swiper-container {
+  width: 300px;
+  height: 380px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.swiper-slide {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background: #f2f2f2;
+}
+.imgBX {
+  background-size: cover;
+}
+.swiper-img {
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+  border-radius: 3px;
+}
+.swiper-content {
+  font-size: 20px;
+  text-align: center;
+}
+.perspective {
+  perspective: 500px;
+  width: 200px;
+  height: 250px;
+  position: relative;
+}
+.descriptions {
+  font-family: "Poppins", sans-serif;
+  padding-top: 100px;
+  width: 1200px;
+  min-height: 400px;
+  height: 250px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align-last: center;
+}
+.imgBook {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 260px;
+  height: 310px;
+}
+.des_link {
+  text-decoration: none;
+  color: black;
+}
+.des_link:hover .des-item:before {
+  display: none;
+}
+.des-item:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, .2);
+  pointer-events: none;
+  transition: 1s;
+  z-index: 1;
+}
+.des-item {
+  box-shadow: -10px 15px 30px rgba(0, 0, 0, 0.2);
+  position: relative;
+  width: 260px;
+  height: 310px;
+  margin-right: 50px;
+  border-radius: 10px;
+  transition: .5s;
+}
+.des__main,
+.des__effect {
+  text-align: center;
+  width: 200px;
+  height: 250px;
+  padding: 30px;
+  transition: .5s;
+}
+.des__main {
+  transform-origin: top;
+  color: white;
+  font-size: 20px;
+}
+
+#bg {
+  transition: .5s;
+  background: white;
+}
+.item-1 {
+  background: linear-gradient(#03a9f4, #e91e63);  
+}
+.item-2 {
+  background: linear-gradient(#ffc107, #57ff57);
+}
+.item-3 {
+  background: linear-gradient(#ffc107, #e91e63);  
+}
+.des-item:hover {
+  box-shadow: -20px 50px 60px rgba(0, 0, 0, 0.5);
+  transition: .5s;
+}
+.des__main  {
+  z-index: 2;
+}
+.des__effect {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform-origin: bottom;
+  transform: rotateX(97deg);
+  background-color: white;
+  opacity: 0;
+  transition: .2s;
+}
+.des-item:hover .des__effect {
+  transform: rotateX(0deg);
+  transition: 1s;
+  transition-delay: .2s;
+  opacity: 1;
+}
+.des-item:hover .des__main {
+  transform: rotateX(-100deg);
+  opacity: 0;
+}
+.menu {
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.menu__list {
+  list-style: none;
+}
+.menu__item {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: transparent;
+  font-weight: 900;
+  -webkit-text-stroke: rgba(0, 0, 0, 0.7) 2px;
+  transition: 0.5s;
+}
+.menu__item:hover {
+  color: rgba(0, 0, 0, 0.7);
+  -webkit-text-stroke: rgba(0, 0, 0, 0.7) 2px;
+  transition: 0.5s;
+}
+.menu__item:before,
+.menu__item:after {
+  content: attr(menu__text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: 0.5s;
+}
+.menu__item:hover:before {
+  color: #f00;
+  z-index: 1;
+  -webkit-text-stroke: black 1px;
+  transform: translate(10px, -10px);
+}
+.menu__item:hover:after {
+  color: #0ff;
+  z-index: 2;
+  -webkit-text-stroke: black 1px;
+  transform: translate(20px, -20px);
+}
