@@ -145,6 +145,16 @@ section:nth-child(6) .image__inner {
   font-weight: 200;
 }
 
+.open {
+  transition: all .5s;
+}
+
+.close {
+  transition: all .5s;
+  filter: blur(10px);
+  transform: scale(0);
+}
+
 @media (max-width: 850px) {
   .text__word {
     font-size: 40px;
@@ -161,6 +171,9 @@ section:nth-child(6) .image__inner {
   }
 }
 @media (max-width: 500px) {
+  .menu {
+    display: none;
+  }
   .text__word {
     font-size: 30px;
   }
