@@ -1,3 +1,6 @@
+import './home.css'
+import './sakura.js'
+
 const box1 = document.getElementById('item-1')
 const box2 = document.getElementById('item-2')
 const box3 = document.getElementById('item-3')
