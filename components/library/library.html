@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r73/three.min.js"></script>
+    <link rel="stylesheet" href="./library.css">
+    <title>Lybrary</title>
+</head>
+
+<body>
+    <canvas id="scene"></canvas>
+    <div class="library__wrapper">
+        <nav class="library__nav">
+            <h1 class="library__nav-title">Arad Sarkis</h1>
+            <div class="library__nav-items">
+                <a href="../../index.html" class="nav_item">Home</a>
+                <a href="./library.html" class="nav_item">Library</a>
+                <a href="../biography/biography.html" class="nav_item">Biography</a>
+                <a href="../contacts/contacts.html" class="nav_item">Contacts</a>
+            </div>
+        </nav>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img class="card__img" src="../../images/book1.png" alt="sorry bro :'('">
+                        <div class="card__desc">
+                            <span class="card__title">
+                                Обрывки минувших дней
+                            </span>
+                            <p class="card__text">
+                                Виктор — студент последнего курса с явными проблемами с агрессией.
+                                На протяжении последнего года обучения он встречается лицом к лицу с предательством
+                                друзей,
+                                любовью, не имеющей будущего, и смертью. Каждое событие ведет его в неизвестность. В
+                                конце
+                                концов,
+                                Виктор остается один на один с самим собой, вынужденный принимать серьезные решения в
+                                ответ на
+                                брошенные судьбой вызовы.
+                                Но именно последнее решит, каково будет его будущее. Книга содержит нецензурную брань.
+                            </p>
+                            <a target="_blink"
+                                href="https://www.litres.ru/arad-sarkis/obryvki-minuvshih-dney/?track=from_selected_books#recenses"
+                                class="card__buy">Купить книгу</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img class="card__img" src="../../images/book2.jpg" alt="sorry bro :'('">
+                        <div class="card__desc">
+                            <span class="card__title">
+                                Утерянный дом
+                            </span>
+                            <p class="card__text">
+                                Во время и после Кавказской войны (1817—1864) в Российской империи велась активная политика
+                                выселения черкесов,
+                                в результате чего за пределами России образовалась внушительная по своей численности черкесская
+                                диаспора,
+                                в то время как на родине осталась лишь горстка представителей этого народа. Семья Мамрэш бежит
+                                от солдат в горы,
+                                оставив позади родное село, родных людей и родной кров. Надежда остается лишь на старого друга
+                                семьи,
+                                к которому они и направляются.
+                                Однако все оборачивается не так, как они того ожидали.
+                            </p>
+                            <a target="_blink"
+                                href="https://www.litres.ru/arad-sarkis-19873084/uteryannyy-dom/"
+                                class="card__buy">Купить книгу</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img class="card__img" src="../../images/book3.jpg" alt="sorry bro :'('">
+                        <div class="card__desc">
+                            <span class="card__title">
+                                Исполин
+                            </span>
+                            <p class="card__text">
+                                Это произведение было создано в форме сценария с надеждой на создание комикса. Надежда не умерла, 
+                                но отложена на будущее. Эта история рассказывает о рождении и взрослении Торка Ангеха, 
+                                исполина с нечеловеческой силой, жившего многие тысячи лет назад. Мальчик, которому судьбой предначертано 
+                                спасти свой народ и свою родину от диких племен 
+                                Севера и остаться в истории как один из богов, почитаемых будущими народами.
+                            </p>
+                            <a target="_blink"
+                                href="https://www.litres.ru/arad-sarkis-23067262/ispolin/"
+                                class="card__buy">Купить книгу</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+    <script src="./library-bg.js"></script>
+    <script src="./library-swiper.js"></script>
+</body>
+
+</html>

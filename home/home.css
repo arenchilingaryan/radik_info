@@ -1,0 +1,127 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  background-size: 100%;
+  overflow-x: hidden;
+}
+
+.bg {
+  position: absolute;
+}
+
+.title {
+  padding-top: 40px;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  color: #ffffff;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1),
+    0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+  text-transform: uppercase;
+}
+
+.swiper-container {
+  width: 220px;
+  height: 300px;
+  margin-top: 50px;
+}
+.swiper-slide {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background: #f2f2f2;
+}
+.imgBX {
+  background-size: cover;
+}
+.nav1 {
+  background-image: url('../images/nav1.png');
+}
+.nav2 {
+  background-image: url('../images/nav2.png');
+}
+.nav3 {
+  background-image: url('../images/nav3.jpg');
+}
+.nav4 {
+  background-image: url('../images/nav4.png');
+}
+
+.swiper-img {
+  width: 220px;
+  height: 220px;
+  background-size: 100%;
+  border-radius: 3px;
+}
+.swiper-content {
+  font-size: 20px;
+  text-align: center;
+}
+.perspective {
+  perspective: 500px;
+  width: 150px;
+  height: 200px;
+  position: relative;
+}
+.descriptions {
+  font-family: "Poppins", sans-serif;
+  padding: 50px 0 50px 0;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imgBook {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 150px;
+  height: 200px;
+}
+.des_link {
+  text-decoration: none;
+  color: black;
+  transition: all 0.3s;
+  margin-right: 40px;
+  transform: rotate(20deg);
+}
+.des_link:last-of-type {
+  margin-right: 0;
+}
+
+.des-item {
+  background-size: 100%;
+}
+.item-1 {
+  background-image: url('../images/book1.png');
+}
+.item-2 {
+  background-image: url('../images/book2.jpg');
+}
+.item-3 {
+  background-image: url('../images/book3.jpg');
+}
+
+#sakura {
+  position: absolute;
+  z-index: -100;
+}
+
+/* MEDIA */
+
+@media (max-width: 850px) {
+  .descriptions {
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    margin-top: 250px;
+    margin-left: 35px;
+  }
+  .des_link {
+    transform: rotate(0);
+    margin-bottom: 40px;
+  }
+  .des_link:last-child {
+    margin-left: -40px;
+  }
+}

@@ -1,0 +1,180 @@
+.menu {
+  position: fixed;
+  left: 0;
+  top: 50px;
+  width: 100%;
+  height: 50px;
+  z-index: 10;
+}
+
+.menu .menu__list {
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.menu__item {
+  cursor: pointer;
+  position: relative;
+  margin: 0 1.4em;
+  padding: 1.2em 1.6em;
+  transition: all 0.2s;
+  transition-delay: 0.2s;
+  color: white;
+  text-decoration: none;
+}
+.menu__item::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px; 
+  background-color: white;
+  transition: all  0.2s;
+}
+.menu__item:hover {
+  background-color: tomato;
+}
+.menu__item:hover::before {
+  bottom: 56px;
+  left: 0;
+  background-color: tomato;
+}
+
+/* BURGER */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+.mobile-menu {
+  position: absolute;
+  z-index: 250;
+  display: none;
+}
+
+.mobile__item {
+  color: white;
+  text-decoration: none;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.intro {
+  text-align: center;
+  color: #fff;
+  opacity: 0;
+  padding-top: 100px;
+  font-family: "Roboto Slab", serif;
+  position: relative;
+  top: -500px;
+  animation: fadeIn 0.4s 1s cubic-bezier(0, 0.63, 0.3, 0.95) forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}
+#nav-cta {
+  display: none;
+}
+
+.cta {
+  width: 55px;
+  height: 55px;
+  background-color: tomato;
+  position: absolute;
+  cursor: pointer;
+  left: 370px;
+  top: 80px;
+  transform: rotate(5deg);
+  transition: left 0.3s ease-in-out;
+  border-radius: 50%;
+}
+.cta span, .cta span:before, .cta span:after {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: #3f3f3f;
+  top: 50%;
+  left: 50%;
+  margin-left: -15px;
+  margin-top: -1px;
+  content: "";
+  transform-origin: center;
+  transition: all 0.3s ease-in-out;
+}
+.cta span:before {
+  top: -10px;
+}
+.cta span:after {
+  top: 12px;
+}
+
+aside {
+  position: fixed;
+  left: -285px;
+  top: -30px;
+  background-color: #333;
+  width: 250px;
+  height: 150%;
+  box-sizing: border-box;
+  padding-top: 100px;
+  transition: left 0.3s ease-in-out;
+  transform: rotate(-5deg);
+}
+
+
+aside ul {
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+  transform: rotate(5deg);
+}
+aside ul li {
+  color: rgba(251, 251, 251, 0.5);
+  font-family: Arial;
+  list-style: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-bottom: 15px;
+  padding-right: 15px;
+  text-align: right;
+  transition: all 0.15s cubic-bezier(0.35, 0.82, 0.4, 1.68);
+  cursor: pointer;
+  font-size: 16px;
+}
+aside ul li:hover {
+  padding-right: 35px;
+  color: #fbfbfb;
+}
+
+#nav-cta:checked + aside {
+  left: -50px;
+}
+#nav-cta:checked + aside .cta {
+  left: 270px;
+}
+#nav-cta:checked + aside .cta span {
+  background-color: transparent;
+}
+#nav-cta:checked + aside .cta span:before, #nav-cta:checked + aside .cta span:after {
+  top: 0;
+}
+#nav-cta:checked + aside .cta span:before {
+  transform: rotate(45deg);
+}
+#nav-cta:checked + aside .cta span:after {
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 500px) {
+  .mobile-menu {
+    display: block;
+  }
+}
