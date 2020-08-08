@@ -34,10 +34,23 @@ body {
 .imgBX {
   background-size: cover;
 }
+.nav1 {
+  background-image: url('../images/nav1.png');
+}
+.nav2 {
+  background-image: url('../images/nav2.png');
+}
+.nav3 {
+  background-image: url('../images/nav3.jpg');
+}
+.nav4 {
+  background-image: url('../images/nav4.png');
+}
+
 .swiper-img {
   width: 220px;
   height: 220px;
-  background-size: cover;
+  background-size: 100%;
   border-radius: 3px;
 }
 .swiper-content {
@@ -76,18 +89,17 @@ body {
   margin-right: 0;
 }
 
-.des__main {
-  z-index: 2;
+.des-item {
+  background-size: 100%;
 }
-.des__effect {
-  position: absolute;
-  left: 0;
-  top: 0;
-  transform-origin: bottom;
-  transform: rotateX(97deg);
-  background-color: white;
-  opacity: 0;
-  transition: 0.2s;
+.item-1 {
+  background-image: url('../images/book1.png');
+}
+.item-2 {
+  background-image: url('../images/book2.jpg');
+}
+.item-3 {
+  background-image: url('../images/book3.jpg');
 }
 
 #sakura {

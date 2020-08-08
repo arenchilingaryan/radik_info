@@ -8,8 +8,13 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="./home/home.css">
+    <link rel="stylesheet" href="./home/audio-player.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-bootstrap/0.5pre/assets/css/bootstrap.min.css">
 </head>
 
 <body>
@@ -25,8 +30,8 @@
             <div class="swiper-wrapper des_div1">
                 <div class="swiper-slide">
                     <div class="imgBX">
-                        <a href="">
-                            <img class="swiper-img" src="./images/nav1.png">
+                        <a class="nav1" href="">
+                            <div class="swiper-img nav1"></div>
                         </a>
                     </div>
                     <div class="swiper-content">Home</div>
@@ -34,7 +39,7 @@
                 <div class="swiper-slide">
                     <div class="imgBX">
                         <a href="./components/library/library.html">
-                            <img class="swiper-img" src="./images/nav2.png">
+                            <div class="swiper-img nav2"></div>
                         </a>
                     </div>
                     <div class="swiper-content">Library</div>
@@ -42,7 +47,7 @@
                 <div class="swiper-slide">
                     <div class="imgBX">
                         <a href="./components/biography/biography.html">
-                            <img class="swiper-img" src="./images/nav3.jpg">
+                            <div class="swiper-img nav3"></div>
                         </a>
                     </div>
                     <div class="swiper-content">Biography</div>
@@ -50,7 +55,7 @@
                 <div class="swiper-slide">
                     <div class="imgBX">
                         <a href="./components/contacts/contacts.html">
-                            <img class="swiper-img" src="./images/nav4.png">
+                            <div class="swiper-img nav4"></div>
                         </a>
                     </div>
                     <div class="swiper-content">Contacts</div>
@@ -58,46 +63,28 @@
             </div>
         </div>
         <div class="descriptions">
-            <a class="des_link" href="https://www.litres.ru/arad-sarkis/obryvki-minuvshih-dney/?track=from_selected_books#recenses" target="_blink">
-                <div class="des-item">
-                    <div class="perspective">
-                        <div class="des__main item-1"> 
-                            <img class="imgBook" src="./images/book1.png" alt="sorry bro :'("> </div>
-                        <div class="des__effect">
-                            Виктор — студент последнего курса с явными проблемами с агрессией. 
-                            На протяжении последнего года обучения он встречается лицом к лицу с предательством друзей, любовью, 
-                            не имеющей будущего, и смертью...
-                        </div>
-                    </div>
+            <a class="des_link"
+                href="https://www.litres.ru/arad-sarkis/obryvki-minuvshih-dney/?track=from_selected_books#recenses"
+                target="_blink">
+                <div class="des-item item-1">
+                    <div class="perspective"></div>
                 </div>
             </a>
             <a class="des_link" href="https://www.litres.ru/arad-sarkis-19873084/uteryannyy-dom/" target="_blink">
-                <div class="des-item">
-                    <div class="perspective">
-                        <div class="des__main item-2"> 
-                            <img class="imgBook" src="./images/book2.jpg" alt="sorry bro :'("> </div>
-                        <div class="des__effect">
-                            Во время и после Кавказской войны (1817—1864) в Российской империи велась активная политика выселения черкесов, 
-                            в результате чего за пределами России образовалась внушительная по своей численности черкесская диаспора...
-                        </div>
-                    </div>
+                <div class="des-item item-2">
+                    <div class="perspective"></div>
                 </div>
             </a>
             <a class="des_link" href="https://www.litres.ru/arad-sarkis-23067262/ispolin/" target="_blink">
-                <div class="des-item">
-                    <div class="perspective">
-                        <div class="des__main item-3"> 
-                            <img class="imgBook" src="./images/book3.jpg" alt="sorry bro :'("> </div>    
-                        </div>
-                        <div class="des__effect">
-                            Это произведение было создано в форме сценария с надеждой на создание комикса. 
-                            Надежда не умерла, но отложена на будущее. Эта история рассказывает о рождении и взрослении 
-                            Торка Ангеха, исполина с нечеловеческой силой...
-                        </div>
-                    </div>
+                <div class="des-item item-3">
+                    <div class="perspective"></div>
                 </div>
-            </a>
         </div>
+        </a>
+    </div>
+
+    <!-- AUDIO -->
+    
 
     </div>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -389,6 +376,7 @@
     }
     </script>
     <script src="./home/sakura.js"></script>
+    <script src="./home/audio-player.js"></script>
 </body>
 
 </html>

@@ -1,5 +1,6 @@
-import './home.css'
-import './sakura.js'
+// import './home.css'
+// import '../style.css'
+
 
 const box1 = document.getElementById('item-1')
 const box2 = document.getElementById('item-2')
